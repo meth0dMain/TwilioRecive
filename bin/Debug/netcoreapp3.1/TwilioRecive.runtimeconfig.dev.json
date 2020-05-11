@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\ildar\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\ildar\\.nuget\\packages"
+    ]
+  }
+}
