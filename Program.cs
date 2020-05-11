@@ -16,8 +16,8 @@ namespace TwilioRecive
     {
         public static void Main(string[] args)
         {
-            const string accountSid = "ACc7fadfaa91ce7b3b287ecba70d62ad67";
-            const string authToken = "8d2320ebba7d993d33a0ff38a85ee575";
+            const string accountSid = "myAccontSid";
+            const string authToken = "myTokken";
             
             TwilioClient.Init(accountSid, authToken);
             
@@ -25,9 +25,9 @@ namespace TwilioRecive
             {
                 var message = MessageResource.Create(
                     body: "I AM YOUR FATHER, DOG",
-                    from: new Twilio.Types.PhoneNumber("+12057829342"),
+                    from: new Twilio.Types.PhoneNumber("+fromWho"),
                     statusCallback: new Uri("http://postb.in/1589191864752-1382141765207"),
-                    to: new Twilio.Types.PhoneNumber("+37253236685")
+                    to: new Twilio.Types.PhoneNumber("+toWho")
                 );
             
                 Console.WriteLine(message.Sid);
